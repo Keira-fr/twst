@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Web Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Web Page</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background-image: url('indexbackground.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .image-link {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .image-link:hover {
+      transform: scale(1.05);
+    }
+
+    .image-link img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-link a {
+      text-decoration: none;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-<h1>Welcome to My Website</h1>
-<p>This is my first HTML page.</p>
+
+  <h1>Welcome to Twisted-Wonderland/h1>
+
+  <div class="container">
+    <!-- nrc page -->
+    <div class="image-link">
+      <a href="dormlist.html">
+        <img src="nrc.jpg" alt="Go to About Page">
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
