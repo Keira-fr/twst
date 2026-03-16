@@ -1,1 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savanaclaw💛🦁</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('indexbackground.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(243, 156, 18, 0.5);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      z-index: 100;
+      pointer-events: auto;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Header */
+    .header {
+      background-color: rgba(243, 156, 18, 0.2);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 70px;
+      pointer-events: none;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: rgba(243, 156, 18, 0.2);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-section h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .about-section p {
+      line-height: 1.6;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    /* All Characters Image */
+    .all-characters-section {
+      background-color: rgba(243, 156, 18, 0.2);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .all-characters-section h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .all-characters-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Characters Section */
+    .characters-section {
+      background-color: rgba(243, 156, 18, 0.2);
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .characters-section h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    /* Character Cards with Image and Table */
+    .character-card {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .character-image {
+      flex: 0 0 250px;
+    }
+
+    .character-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .character-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    table th {
+      background-color: #ffffff;
+      color: dark gray;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    table td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      color: #000000
+    }
+
+    table tr{
+      background-color: #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .character-card {
+        flex-direction: column;
+      }
+
+      .character-image {
+        flex: 0 0 100%;
+      }
+
+      .header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="dormlist.html" onclick="history.back(); return false;" class="back-btn">← Back to Dorms</a>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Savanaclaw</h1>
+    <p>Meet the Residents of Savanaclaw</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <h2>About Savanaclaw</h2>
+    <p>
+      Welcome to Savanaclaw! A dorm based on the King of Beasts' spirit of persistence.
+      Twisted from The Lion King.
+    </p>
+    <p>
+      Savanaclaw students tend to excel in athletics and martial arts. 
+      In addition to such skills, most residents inside Savanaclaw are rather hotheaded.
+    </p>
+  </div>
+
+  <!-- All Characters Image -->
+  <div class="all-characters-section">
+    <h2>A King & His Loyal Followers 👑🐾</h2>
+    <img src="Savanastudents.jpg" alt="The Savanaclaw Residents">
+  </div>
+
+  <!-- Individual Characters with Tables -->
+  <div class="characters-section">
+    <h2>Meet Your Dormates</h2>
+
+    <!-- leona -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Leona.jpg" alt="Leona Kingscholar">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Leona Kingscholar</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>June 27</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Housewarden; Dormitory-Leader</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>3rd</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Slacker, arrogant</td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Spelldrive Club</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Ancient Curses</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Jack -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Jack.jpg" alt="Jack Howl">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Jack Howl</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>October 11</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Student</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>1st</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Justice, Loyal, Determined</td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Track and Field</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Defensive Magic</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ruggie -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Ruggie.jpg" alt="Ruggie Bucchi">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Ruggie Bucchi</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>April 18</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Vice-Housewarden</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>2nd</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Cheerful, Mischievous, Laid-back, Caring </td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Magical Shift</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Animal Languages</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
