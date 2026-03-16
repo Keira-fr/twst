@@ -1,1 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scarabia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('indexbackground.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(35, 137, 247, 0.5);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      z-index: 100;
+      pointer-events: auto;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Header */
+    .header {
+      background-color: rgba(35, 137, 247, 0.2);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 70px;
+      pointer-events: none;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: rgba(35, 137, 247, 0.2);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-section h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .about-section p {
+      line-height: 1.6;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    /* All Characters Image */
+    .all-characters-section {
+      background-color: rgba(35, 137, 247, 0.2);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .all-characters-section h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .all-characters-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Characters Section */
+    .characters-section {
+      background-color: rgba(35, 137, 247, 0.2);
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .characters-section h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    /* Character Cards with Image and Table */
+    .character-card {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .character-image {
+      flex: 0 0 250px;
+    }
+
+    .character-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .character-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    table th {
+      background-color: #ffffff;
+      color: dark gray;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    table td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      color: #000000
+    }
+
+    table tr{
+      background-color: #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .character-card {
+        flex-direction: column;
+      }
+
+      .character-image {
+        flex: 0 0 100%;
+      }
+
+      .header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="dormlist.html" onclick="history.back(); return false;" class="back-btn">← Back to Dorms</a>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Ignihyde</h1>
+    <p>Meet the Residents of Ignihyde</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <h2>About Ignihyde</h2>
+    <p>
+      Welcome to Ignihyde! A dorm based on the King of the Underworld's spirit of diligence.
+      Twisted from Hercules.
+    </p>
+    <p>
+      Ignihyde is a home to students who specialize in non-magical technology, 
+      giving the dorm a distinctive atmosphere. 
+      The dorm is occupied by students who excel in tech-related fields, 
+      as well as magical-energy engineers, focused on researching the integration of magic with the latest technology. 
+      Ignihyde students tend to be quiet, serious, and not very outgoing.
+    </p>
+  </div>
+
+  <!-- All Characters Image -->
+  <div class="all-characters-section">
+    <h2>The Keepers of the Underworld💀🩵</h2>
+    <img src="Ignistudents.jpg" alt="The Ignihyde Residents">
+  </div>
+
+  <!-- Individual Characters with Tables -->
+  <div class="characters-section">
+    <h2>Meet Your Dormates</h2>
+
+    <!-- idia -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Idia.jpg" alt="Idia Shroud">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Idia Shroud</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>December 18</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Housewarden; Dormitory-Leader</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>3rd</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Intelligent, Reclusive, Stubborn, Tech-savvy Gamer</td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Board Game Club</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Summoning</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- ortho -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Ortho.jpg" alt="Ortho Shroud">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Ortho Shroud</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>August 14</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Vice-Housewarden/Student</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>1st</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Protective, Inquisitive, Optimistic, Analytical, Playful</td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Basketball Club</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Film Studies Club</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
