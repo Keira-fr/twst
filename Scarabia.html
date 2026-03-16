@@ -1,1 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scarabia</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('indexbackground.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background-color: rgba(156, 39, 23, 0.5);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      z-index: 100;
+      pointer-events: auto;
+    }
+
+    .back-btn:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Header */
+    .header {
+      background-color: rgba(156, 39, 23, 0.2);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 70px;
+      pointer-events: none;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: rgba(156, 39, 23, 0.2);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-section h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .about-section p {
+      line-height: 1.6;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    /* All Characters Image */
+    .all-characters-section {
+      background-color: rgba(156, 39, 23, 0.2);
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .all-characters-section h2 {
+      color: #ffffff;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    .all-characters-section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Characters Section */
+    .characters-section {
+      background-color: rgba(156, 39, 23, 0.2);
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    .characters-section h2 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #ffffff;
+      padding-bottom: 10px;
+    }
+
+    /* Character Cards with Image and Table */
+    .character-card {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .character-image {
+      flex: 0 0 250px;
+    }
+
+    .character-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .character-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    table th {
+      background-color: #ffffff;
+      color: dark gray;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+    }
+
+    table td {
+      padding: 12px;
+      border-bottom: 1px solid #ccc;
+      color: #000000
+    }
+
+    table tr{
+      background-color: #ffffff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .character-card {
+        flex-direction: column;
+      }
+
+      .character-image {
+        flex: 0 0 100%;
+      }
+
+      .header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="dormlist.html" onclick="history.back(); return false;" class="back-btn">← Back to Dorms</a>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Scarabia</h1>
+    <p>Meet the Residents of Scarabia</p>
+  </div>
+
+  <!-- About Section -->
+  <div class="about-section">
+    <h2>About Scarabia</h2>
+    <p>
+      Welcome to Scarabia! A dorm based on the Sorcerer of the Sands' spirit of mindfulness.
+      Twisted from Aladdin.
+    </p>
+    <p>
+      The dorm emphasises the importance of careful deliberation and planning, 
+      and its students tend to consider their options before making major decisions.
+    </p>
+  </div>
+
+  <!-- All Characters Image -->
+  <div class="all-characters-section">
+    <h2>The Sultan & His Vizier 🐍⌛</h2>
+    <img src="Scarabstudents.jpg" alt="The Scarabia Residents">
+  </div>
+
+  <!-- Individual Characters with Tables -->
+  <div class="characters-section">
+    <h2>Meet Your Dormates</h2>
+
+    <!-- leona -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Kalim.jpg" alt="Kalim Al-Asim">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Kalim Al-Asim</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>June 25</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Housewarden; Dormitory-Leader</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>2nd</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Kind, Friendly, Cheerful, Optimist</td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Light Music Club</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Music</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Jamil -->
+    <div class="character-card">
+      <div class="character-image">
+        <img src="Jamil.jpg" alt="Jamil Viper">
+      </div>
+      <div class="character-info">
+        <table>
+          <tr>
+            <td><strong>Name</strong></td>
+            <td>Jamil Viper</td>
+          </tr>
+           <tr>
+            <td><strong>Birthday</strong></td>
+            <td>September 12</td>
+          </tr>
+          <tr>
+            <td><strong>Occupation</strong></td>
+            <td>Vice-Housewarden</td>
+          </tr>
+          <tr>
+            <td><strong>Year</strong></td>
+            <td>2nd</td>
+          </tr>
+          <tr>
+            <td><strong>Personality</strong></td>
+            <td>Protective, Observant, Careful, Intelligent</td>
+          </tr>
+          <tr>
+            <td><strong>Club</strong></td>
+            <td>Basketball Club</td>
+          </tr>
+          <tr>
+            <td><strong>Best Subject</strong></td>
+            <td>Ancient Incantations</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
