@@ -199,32 +199,22 @@
         padding-bottom: 10px;
       }
       .next-btn {
-        display: inline-block;
-        background-color: #ffffff;
-        color: #000000;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
         padding: 12px 24px;
         text-decoration: none;
         border-radius: 5px;
-        font-weight: bold;
-        margin-bottom: 30px;
-        transition: 0.3s;
-      }
-      .next-btn:hover {
-        background-color: #000000;
-        color: #ffffff;
-      }
-      .video-container {
-        display: flex;
-        justify-content: center;
-        margin: 20px auto;
-      }
-      .video-container iframe {
-        width: 100%;
-        max-width: 800px;
-        aspect-ratio: 16 / 9;
-        border-radius: 8px;
-        border: none;
-      } 
+        transition: background-color 0.3s;
+        z-index: 100;
+        pointer-events: auto;
+        }
+        .next-btn:hover {
+           background-color: rgba(0, 0, 0, 0.5);
+        }
+      
   </style>
 </head>
 <body>
@@ -453,20 +443,6 @@
             <td>PE</td>
           </tr>
         </table>
-      </div>
-    </div>
-    <!-- Bottom Section -->
-    <h2>Disney Twisted-Wonderland - Heartslabyul Animation</h2>
-      <div class="video-container">
-        <iframe
-          width="800"
-          height="450"
-          src="https://www.youtube.com/embed/3Rxc9z_Pr_w?si=QHGDsnBlwAqtELFm"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
       </div>
     </div>
   
